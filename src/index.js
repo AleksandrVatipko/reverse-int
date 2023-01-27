@@ -1,5 +1,5 @@
-const { assert } = require("chai")
-
-module.exports = function reverse (n) {
-  assert.equal(reversed, n);
-}
+module.exports = function reverse(n) {
+    n = Math.abs(n);
+    n = n + "";
+    return n.split("").reverse().join("");
+};
